@@ -1,0 +1,172 @@
+输入---------------------------------------------------------
+Scanner scanner = new Scanner(System.in)
+int m = scanner.nextInt();
+String m = scanner.nextLine();
+String[] numStr = sc.nextLine().split(" ");
+String[] str = in.nextLine().split("\\W+");
+
+
+
+scanner.close();
+
+ArrayList<ArrayList<String>> list = new ArrayList<>()
+for (int i = 0; i < num; i++) {
+       String[] arr = scanner.nextLine().split(",");
+       sum += arr.length;
+       list.add(new ArrayList<String>(Arrays.asList(arr)));
+     }
+
+
+Arrays.stream(in.nextLine().split(","))
+                    .forEach(x -> ints.add(Integer.parseInt(x)));//ints 为list
+
+List<Integer> list = Arrays.stream(in.nextLine().split(","))
+                .map(Integer::parseInt)
+                .collect(Collectors.toList());
+
+System.out.println(resStr.substring(0, resStr.length() - 1));
+System.out.println(line.length() == 0 ? "empty" : line);
+for (int i = 0; i < highs.size(); i++) {
+    System.out.print(highs.get(i));
+    if (i != highs.size() - 1) {
+        System.out.print(" ");
+    }
+}
+res.forEach(System.out::println);
+
+map处理--------------------------------------------------------
+HashMap<Character, Integer> map = new HashMap<>();
+map.put(c, map.containsKey(c) ? map.get(c) + 1 : 1L);
+Long[] longs = map.values().toArray(counts);
+for (Map.Entry<Character, Long> entry : map.entrySet()) {
+    if (entry.getValue().equals(min)) {
+        line = line.replaceAll(entry.getKey() + "", "");
+    }
+}
+初始化--------------------------------------------------------
+ArrayList<ArrayList<String>> list = new ArrayList<>()
+HashMap<Character, Integer> map = new HashMap<>();
+ArrayList<Integer> list = new ArrayList<>(ints);//TreeSet<Integer> ints 
+TreeSet<String> words = new TreeSet<>(Arrays.asList(str))//str 为字符串数组
+LinkedList<Integer> ints = new LinkedList<>();
+ints.addLast(ints.remove(0));// 00111 ==》01110
+TreeMap<Integer, Integer> pool = new TreeMap<>();
+
+Arrays.asList(arr)；
+StringBuilder字符串 /string--------------------------------------------------------
+StringBuilder buffer = new StringBuilder();
+buffer.toString().trim()
+
+treeSet--------------------------------------------------------
+唯一且排序
+TreeSet<Integer> ints = new TreeSet<>();
+for (String num : nums) {
+    ints.add(Integer.parseInt(num));
+}
+
+ints.startsWith(pre)
+
+
+list排序--------------------------------------------------------
+ highs.sort((h1, h2) -> {//highs 为list
+            int diff1 = Math.abs(h1 - h);               
+            int diff2 = Math.abs(h2 - h);
+            return diff1 == diff2 ? h1 - h2 : diff1 - diff2;由小到大
+        });
+        由大到小
+list.sort(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o2.split("-")[1].compareTo(o1.split("-")[1]);
+            }
+        });
+
+list.sort(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return getKey(o1) - getKey(o2);
+            }
+
+            public Integer getKey(int i) {
+                i = i > 0 ? i : -i;
+                return i % 10;//取余数
+            }
+        });
+res.sort(Comparator.comparingInt(String::length));
+
+
+list.add(strList.remove(0));//trList.remove(0)返回所移除的数值
+list.add(new ArrayList<String>(Arrays.asList(arr)));//arr为数组，数组转list
+
+Arrays.sort(ints); int为数组
+Arrays.stream(in.nextLine().split(","))
+                    .forEach(x -> ints.add(Integer.parseInt(x)));
+
+combines.stream()
+        .map(list -> sum(list))
+        .sorted(Integer::compareTo)
+        .forEach(sum -> {
+            if (sum > res && sum <= r) {
+                res = sum;
+            }
+        });
+
+Integer[] list = Arrays.stream(nums)
+                .map(Integer::parseInt)
+                .filter(x -> x < base)
+                .sorted()
+                .toArray(Integer[]::new);（数组）//对比.collect(Collectors.toList());（容器）
+
+ for (Integer i : prices) {
+            sum += i;
+        }
+
+map--------------------------------------------------------
+TreeMap<Integer, Integer> pool = new TreeMap<>();       
+  for (Integer k : pool.keySet()) {
+                Integer v = pool.get(k);
+                if (k >= size && v != 0) {
+                    builder.append("true,");
+                    pool.put(k, v - 1);
+                    flag = true;
+                    break;
+                }
+            }
+
+ HashMap<Integer, Integer> map = new HashMap<>();
+ Arrays.stream(in.nextLine().split(" "))
+        .forEach(x -> {
+            int i = Integer.parseInt(x);
+            map.put(i, map.getOrDefault(i, 0)+1);
+        });
+Integer max = map.values().stream().max(Integer::compareTo).get();//最多出现的数值
+List<Integer> newArr = map.keySet().stream()
+                                   .filter(k -> map.get(k).equals(max))
+                                   .sorted(Integer::compareTo)
+                                   .collect(Collectors.toList());
+
+
+正则--------------------------------------------------------
+String[] str = in.nextLine().split("\\W+");
+
+
+栈--------------------------------------------------------
+public static boolean isValid(String s) {
+        Stack<Character> stack = new Stack<Character>();
+        for(char c: s.toCharArray()){
+            if(c=='(')stack.push(')');
+            else if(c=='[')stack.push(']');
+            else if(c=='{')stack.push('}');
+            else if(stack.isEmpty()||c!=stack.pop())return false;
+        }
+        return stack.isEmpty();
+    }
+
+Math-------------------------------------------------------
+Math.min(x, y)；
+Math.sqrt(min);开方
+Integer.parseInt(s)
+Integer.MIN_VALUE;
+Integer.parseInt(binInt, 2);
+Integer.toBinaryString(num)
+Integer.toHexString（）16位
